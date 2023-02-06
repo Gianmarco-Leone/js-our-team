@@ -2,10 +2,18 @@ body {
     background-color: #F5F5F1;
 }
 
+.container div.w-50 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container div:first-child p {
+    color: #666;
+}
+
 #container_cards {
     font-family: 'Playfair Display', serif;
 }
 
-.col-4 div {
+.col-6 div {
     max-width: 400px;
 }

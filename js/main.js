@@ -69,7 +69,7 @@ const teamMembers = [
 for (let teamMember of teamMembers) {
     console.log(teamMember);
     containerEl.innerHTML += `
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card mt-3 border-0">
             <div>
                 <img src="./img/${teamMember.photo}" alt="Member image" class="img-fluid">
