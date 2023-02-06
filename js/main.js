@@ -25,3 +25,38 @@
 
 // BONUS 2:
 // Organizzare i singoli membri in card / schede
+
+// SVOLGIMENTO:
+
+const teamMembers = [
+    {
+        name: "Wayne Barnett",
+        role: "Founder & CEO",
+        photo: "<img src='wayne-barnett-founder-ceo.jpg'>"
+    },
+    {
+        name: "Angela Caroll",
+        role: "Chief Editor",
+        photo: "<img src='angela-caroll-chief-editor.jpg'>"
+    },
+    {
+        name: "Walter Gordon",
+        role: "Office Manager",
+        photo: "<img src='walter-gordon-office-manager.jpg'>"
+    },
+    {
+        name: "Angela Lopez",
+        role: "Social Media Manager",
+        photo: "<img src='angela-lopez-social-media-manager.jpg'>"
+    },
+    {
+        name: "Scott Estrada",
+        role: "Developer",
+        photo: "<img src='scott-estrada-developer.jpg'>"
+    },
+    {
+        name: "Barbara Ramos",
+        role: "Graphic Designer",
+        photo: "<img src='barbara-ramos-graphic-designer.jpg'>"
+    }
+];
