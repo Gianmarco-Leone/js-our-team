@@ -26,8 +26,10 @@
 // BONUS 2:
 // Organizzare i singoli membri in card / schede
 
+
 // SVOLGIMENTO:
 
+// Creo array membri del team
 const teamMembers = [
     {
         name: "Wayne Barnett",
@@ -60,3 +62,8 @@ const teamMembers = [
         photo: "<img src='barbara-ramos-graphic-designer.jpg'>"
     }
 ];
+
+// Stampare su console PER OGNI membro del team le informazioni
+for (let teamMember of teamMembers) {
+    console.log(teamMember);
+}
