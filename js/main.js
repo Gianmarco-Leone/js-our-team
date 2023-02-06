@@ -69,6 +69,16 @@ const teamMembers = [
 for (let teamMember of teamMembers) {
     console.log(teamMember);
     containerEl.innerHTML += `
-    <p> ${teamMember.name} , ${teamMember.role} </p> <img src="./img/${teamMember.photo}" alt="Member Image">
+    <div class="col-4">
+        <div class="card mt-3 border-0">
+            <div>
+                <img src="./img/${teamMember.photo}" alt="Member image" class="img-fluid">
+                    <div class="text-center py-3">
+                        <span class="d-block fw-semibold fs-5">${teamMember.name}</span>
+                        <span class="fw-light">${teamMember.role}</span>
+                    </div>
+            </div>
+        </div>
+    </div> 
     `
 };
