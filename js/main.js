@@ -30,7 +30,6 @@
 // SVOLGIMENTO:
 
 const containerEl = document.getElementById("container_cards");
-let img = document.createElement("img");
 
 // Creo array membri del team
 const teamMembers = [
@@ -69,9 +68,7 @@ const teamMembers = [
 // Stampare su console PER OGNI membro del team le informazioni
 for (let teamMember of teamMembers) {
     console.log(teamMember);
-    img.src = teamMember.photo;
-    containerEl.append(img);
     containerEl.innerHTML += `
-    <p> ${teamMember.name} , ${teamMember.role}
+    <p> ${teamMember.name} , ${teamMember.role} </p> <img src="./img/${teamMember.photo}" alt="Member Image">
     `
 };
