@@ -29,46 +29,49 @@
 
 // SVOLGIMENTO:
 
-const containerEl = document.getElementById("container");
+const containerEl = document.getElementById("container_cards");
+let img = document.createElement("img");
 
 // Creo array membri del team
 const teamMembers = [
     {
         name: "Wayne Barnett",
         role: "Founder & CEO",
-        photo: "img src='wayne-barnett-founder-ceo.jpg'"
+        photo: "wayne-barnett-founder-ceo.jpg"
     },
     {
         name: "Angela Caroll",
         role: "Chief Editor",
-        photo: "img src='angela-caroll-chief-editor.jpg'"
+        photo: "angela-caroll-chief-editor.jpg"
     },
     {
         name: "Walter Gordon",
         role: "Office Manager",
-        photo: "img src='walter-gordon-office-manager.jpg'"
+        photo: "walter-gordon-office-manager.jpg"
     },
     {
         name: "Angela Lopez",
         role: "Social Media Manager",
-        photo: "img src='angela-lopez-social-media-manager.jpg'"
+        photo: "angela-lopez-social-media-manager.jpg"
     },
     {
         name: "Scott Estrada",
         role: "Developer",
-        photo: "img src='scott-estrada-developer.jpg'"
+        photo: "scott-estrada-developer.jpg"
     },
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
-        photo: "img src='barbara-ramos-graphic-designer.jpg'"
+        photo: "barbara-ramos-graphic-designer.jpg"
     }
 ];
 
 // Stampare su console PER OGNI membro del team le informazioni
 for (let teamMember of teamMembers) {
     console.log(teamMember);
+    img.src = teamMember.photo;
+    containerEl.append(img);
     containerEl.innerHTML += `
-    <p> ${teamMember.name} , ${teamMember.role} , ${teamMember.photo}
+    <p> ${teamMember.name} , ${teamMember.role}
     `
-}
+};
